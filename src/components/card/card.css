@@ -11,7 +11,6 @@
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
-  /* width: 11em; */
   justify-content: center;
 }
 
@@ -25,6 +24,7 @@
   display: grid;
   grid-auto-flow: row;
   color: rgb(161, 161, 161);
+  border-radius: 10px;
   background-color: rgb(46, 46, 46);
 }
 
@@ -48,5 +48,15 @@
   .container {
     grid-template-columns: auto;
     padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template: 1fr / 1fr;
+  }
+  .card__portrait {
+    display: grid;
+    justify-self: center;
   }
 }
