@@ -41,11 +41,14 @@ export const Multiple = () => {
       species: "Human",
       origin: { name: "Earth (C-137)" },
     },
+    {
+      imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+      name: "Morty Smith",
+      status: "Dead",
+      species: "Human",
+      origin: { name: "Earth (C-137)" },
+    },
   ];
-
-  // todo: display multiple characters based on `characters`.
-  // you can use `createElement` here to create a container.
-  // don't forget to return the container.
 
   const container = createElement("div", {
     className: "container",

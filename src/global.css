@@ -23,3 +23,7 @@ textarea {
   margin: 0;
   font-family: "Quicksand", sans-serif;
 }
+
+p {
+  margin: 0.5em;
+}
