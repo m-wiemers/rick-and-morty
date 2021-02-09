@@ -11,7 +11,7 @@
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
-  width: 11em;
+  /* width: 11em; */
   justify-content: center;
 }
 
@@ -40,6 +40,13 @@
     grid-template: 1fr / 1fr;
   }
 
+  .card__portrait {
+    display: grid;
+    justify-self: center;
+  }
+
   .container {
     grid-template-columns: auto;
+    padding: 0;
   }
+}
