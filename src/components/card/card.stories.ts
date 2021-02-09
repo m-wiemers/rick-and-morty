@@ -3,6 +3,7 @@ import { createCard } from "./card";
 import { createElement } from "../../utils/createElement";
 import { getCharacter } from "../../utils/api";
 
+
 export default {
   title: "Components/Cards",
   parameters: { layout: "centered" },
@@ -59,6 +60,7 @@ export const Multiple = () => {
   return container;
 };
 
+
 export const CharacterFromAPI = (args, { loaded: { character } }) => {
   return createCard(character);
 };
@@ -68,3 +70,4 @@ CharacterFromAPI.loaders = [
     character: await getCharacter(666),
   }),
 ];
+
