@@ -26,7 +26,7 @@ export const Morty = () =>
   });
 
 export const Multiple = () => {
-  const characters = [
+  const characterList = [
     {
       imgSrc: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
       name: "Rick Sanchenz",
@@ -52,7 +52,7 @@ export const Multiple = () => {
 
   const container = createElement("div", {
     className: "container",
-    childs: characters.map((character) => createCard(character)),
+    childs: characterList.map((character) => createCard(character)),
   });
 
   return container;
