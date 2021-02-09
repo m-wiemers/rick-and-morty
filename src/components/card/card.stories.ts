@@ -1,6 +1,8 @@
 import "./card.css";
 import { createCard } from "./card";
 import { createElement } from "../../utils/createElement";
+import { getCharacter } from "../../utils/api";
+
 
 export default {
   title: "Components/Cards",
@@ -57,3 +59,15 @@ export const Multiple = () => {
 
   return container;
 };
+
+
+export const CharacterFromAPI = (args, { loaded: { character } }) => {
+  return createCard(character);
+};
+
+CharacterFromAPI.loaders = [
+  async () => ({
+    character: await getCharacter(666),
+  }),
+];
+
