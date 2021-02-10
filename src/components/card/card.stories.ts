@@ -38,14 +38,7 @@ export const Multiple = () => {
     {
       imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
       name: "Morty Smith",
-      status: "Dead",
-      species: "Human",
-      origin: { name: "Earth (C-137)" },
-    },
-    {
-      imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
-      name: "Morty Smith",
-      status: "Dead",
+      status: "Alive",
       species: "Human",
       origin: { name: "Earth (C-137)" },
     },
