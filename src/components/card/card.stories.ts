@@ -1,8 +1,7 @@
 import "./card.css";
 import { createCard } from "./card";
 import { createElement } from "../../utils/createElement";
-import { getCharacter } from "../../utils/api";
-import { getCharacters } from "../../utils/api";
+import { getCharacter, getCharacters } from "../../utils/api";
 
 export default {
   title: "Components/Cards",
