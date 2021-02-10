@@ -26,7 +26,7 @@ export function createCard({ imgSrc, name, status, species, origin }) {
           }),
           createElement("p", {
             className: "card__origin",
-            innerText: "Origin: " + origin,
+            innerText: "Origin: " + origin.name,
           }),
         ],
       }),
