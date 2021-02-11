@@ -44,6 +44,7 @@ export function createCard({ imgSrc, name, status, species, origin }) {
             className: "card__back",
             childs: [
               createElement("p", {
+                className: "card__info",
                 innerText: "kommt noch",
               }),
             ],
